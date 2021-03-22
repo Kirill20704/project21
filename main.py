@@ -84,7 +84,7 @@ while True:
 	if sum(n2) < sum(f11or1(n1)) <= 21 or (sum(f11or1(n1)) <= 21 and sum(n2) > 21):
 		print('Вы выйграли')
 		p1 += 1
-	elif sum(f11or1(n1)) == sum(n2) or (sum(f11or1(n1)) > 21and sum(n2) > 21):
+	elif sum(f11or1(n1)) == sum(n2) or (sum(f11or1(n1)) > 21 and sum(n2) > 21):
 		print('Ничья')
 	else:
 		print('Вы проиграли')
