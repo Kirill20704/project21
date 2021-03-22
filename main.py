@@ -28,7 +28,7 @@ def filt(a, b):
 	while r in b:
 		y = ch()
 		r = y[1]
-		x = y[2]
+		x = y[2] 
 	return [r, x]
 def f11or1(a):
 	''' Туз начисляет либо 11 очков, либо 1. Эта функция определяет, какое значение выбрать '''
@@ -79,6 +79,7 @@ while True:
 			v2.append(t2[0])
 			n2.append(t2[1])
 			b = prob(f11or1(n2))
+			n2 = f11or1(n2)
 	print('Сумма:' , sum(f11or1(n1)), '|', v2, sum(n2))
 	if sum(n2) < sum(f11or1(n1)) <= 21 or (sum(f11or1(n1)) <= 21 and sum(n2) > 21):
 		print('Вы выйграли')
