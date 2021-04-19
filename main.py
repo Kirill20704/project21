@@ -9,6 +9,8 @@ def prob(list1, n=0, i=1):
 		return prob(list1, n, i+1)
 	except:
 		return 0
+
+
 from random import *
 s = [ [i + j for i in ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'] ] for j in '♤♡◇♧']
 z = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, [11, 1]]
@@ -18,6 +20,8 @@ def ch(s, z):
 	r2 = choice(r1)
 	ind = z[r1.index(r2)]
 	return [s.index(r1), r2, ind]
+
+
 def filt(a, b):
 	''' Предотвращение повторений карт +rec'''
 	y = a
@@ -26,6 +30,8 @@ def filt(a, b):
 	if r not in b:
 		return [r,x]
 	return filt(ch(s, z),b)
+
+
 def f11or1(a, j=0, s=0):
 	''' Туз начисляет либо 11 очков, либо 1. Эта функция определяет, какое значение выбрать +rec'''
 	if a.count([11, 1]) == 0:
@@ -45,6 +51,8 @@ def f11or1(a, j=0, s=0):
 			s += 1
 			d.append(1)
 		return f11or1(a, j, s)
+
+
 ''' Переменные с индексом 1 относятся к игроку, с индексом 2 - к его сопернику (программе)' '''
 p1 = 0
 p2 = 0
