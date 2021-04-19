@@ -85,7 +85,7 @@ while True:
 			n2.append(t2[1])
 			b = prob(f11or1(n2))
 			n2 = f11or1(n2)
-	print('Сумма:' , sum(f11or1(n1)), '|', v2, sum(n2))
+	print('Сумма:' , sum(f11or1(n1)), '|', *v2, ' (', sum(n2), ')')
 	if sum(n2) < sum(f11or1(n1)) <= 21 or (sum(f11or1(n1)) <= 21 and sum(n2) > 21):
 		print('Вы выйграли')
 		p1 += 1
